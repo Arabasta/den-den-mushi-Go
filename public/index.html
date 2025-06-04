@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>Den Den Mushi Terminal</title>
+    <link rel="stylesheet" href="css/xterm.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="header">
+    <div class="left">
+        <strong>Den Den Mushi</strong>
+    </div>
+    <div class="right">
+        <button class="menu-button" id="menuButton">⋮</button>
+    </div>
+</div>
+
+<div class="dropdown" id="settingsMenu">
+    <p><strong>Settings</strong></p>
+    <label for="themeSelect"><strong>Theme:</strong></label>
+    <select id="themeSelect">
+        <option value="GruvboxDark">Gruvbox Dark</option>
+        <option value="Dracula">Dracula</option>
+        <option value="SolarizedLight">Solarized Light</option>
+        <option value="SolarizedDark">Solarized Dark</option>
+        <option value="Monokai">Monokai</option>
+    </select>
+
+    <label for="fontSelect"><strong>Font:</strong></label>
+    <select id="fontSelect">
+        <option value="Courier New">Courier New</option>
+        <option value="Monaco">Monaco</option>
+    </select>
+
+    <div class="font-size-controls">
+        <button id="decreaseFont" class="font-btn">−</button>
+        <span id="fontSizeDisplay">16px</span>
+        <button id="increaseFont" class="font-btn">+</button>
+    </div>
+
+    <label>
+        <input type="checkbox" id="puttyCopyPasteToggle">
+        <strong>PuTTY-style Copy/Paste</strong>
+    </label>
+
+    <br><br>
+    <small>
+        Made by <a href="https://github.com/Arabasta" target="_blank" rel="noopener">Arabasta</a>
+    </small>
+</div>
+
+<div id="terminal"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
